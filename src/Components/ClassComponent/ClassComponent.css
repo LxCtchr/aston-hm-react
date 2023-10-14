@@ -1,0 +1,13 @@
+.form {
+  margin-bottom: 15px;
+}
+
+.form>input {
+  padding: 10px;
+}
+
+.form__button {
+  margin-left: 15px;
+  padding: 10px;
+  border: 1px solid grey;
+}

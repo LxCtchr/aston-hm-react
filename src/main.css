@@ -1,0 +1,16 @@
+@import "reset.css";
+
+body {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  max-width: 1185px;
+  margin: 0px auto;
+  padding: 0 15px;
+  flex: 1 1 auto;
+
+  align-items: center;
+  justify-content: center;
+}
