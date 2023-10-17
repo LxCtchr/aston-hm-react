@@ -1,3 +1,8 @@
 .input {
-  padding: 10px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.input:focus {
+  border: 1px solid red;
 }
