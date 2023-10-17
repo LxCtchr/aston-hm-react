@@ -7,6 +7,7 @@ class ClassComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = { value: "from state value" };
+    this.handleClick = this.handleClick.bind(this);
   }
 
   componentDidMount() {
@@ -21,6 +22,10 @@ class ClassComponent extends React.Component {
     console.log("Unmount");
   }
 
+  handleClick() {
+    this.setState((prevState) => (prevState.value = 12345678));
+  }
+
   render() {
     return (
       <>
@@ -30,9 +35,7 @@ class ClassComponent extends React.Component {
           <button
             type="submit"
             className="form__button"
-            onClick={() => {
-              this.setState((state) => (state.value = 1235687));
-            }}
+            onClick={this.handleClick}
           >
             Подтвердить
           </button>
