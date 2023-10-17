@@ -22,7 +22,8 @@ class ClassComponent extends React.Component {
     console.log("Unmount");
   }
 
-  handleClick() {
+  handleClick(event) {
+    event.preventDefault();
     this.setState((prevState) => (prevState.value = 12345678));
   }
 
